@@ -1,6 +1,7 @@
 import React from "react";
 import SectionTitle from "../Common/Title/SectionTitle";
 import { ServiceData } from "./serviceData";
+import Image from "next/image";
 
 
 const Services: React.FC = () => {
@@ -21,7 +22,7 @@ const Services: React.FC = () => {
               className="shrink-0 w-full max-w-full px-3 xl:w-4/12 xl:flex-[0_0_auto] lg:w-6/12 lg:flex-[0_0_auto] md:w-6/12 md:flex-[0_0_auto]"
             >
               <div className="service card card--white text-center transition-all duration-700 ease-out bg-[#fff] dark:bg-[#232323] mb-6 p-[30px] rounded-[20px] border-0">
-                <img
+                <Image
                   alt={service.title}
                   loading="lazy"
                   width="250"

@@ -5,11 +5,12 @@ import Link from "next/link";
 import { MoreAboutSvg } from "../Common/Icon/svg";
 import HeroSocialMedia from "./HeroSocialMedia";
 import InfoSection from "./InfoSection";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <section className="hero vh-100 px-[30px] bg-cover bg-center relative z-10">
-      <img
+      <Image
         alt=""
         fetchPriority="high"
         decoding="async"
@@ -17,6 +18,8 @@ export default function Hero() {
         className="hero__img absolute inset-0 h-full w-full text-transparent m-0 object-cover border-none max-w-full align-middle"
         sizes="100vw"
         src="/images/bg1.jpg"
+        width={1920}
+        height={1080}
       />
       <div className="container transform-none opacity-100 w-full mx-auto px-3">
         <div className="row -mx-3 mt-0 flex flex-wrap">

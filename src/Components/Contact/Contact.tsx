@@ -1,8 +1,7 @@
 import React from "react";
 import SectionTitle from "../Common/Title/SectionTitle";
 import Textarea from "../Contact/Textarea"
-import { EmailSvg, FaceBookSvg, LocationSvg, PhoneSvg, SendSvg, ShareSvg } from "../Common/Icon/svg";
-import Link from "next/link";
+import { EmailSvg, LocationSvg, PhoneSvg, SendSvg, ShareSvg } from "../Common/Icon/svg";
 import SocialMediaList from "./SocialMediaList";
 
 export default function Contact() {

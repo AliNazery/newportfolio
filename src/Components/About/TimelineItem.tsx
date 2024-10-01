@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 // TimelineItem.jsx
 interface TimelineItemProp {
   title: string;
@@ -11,7 +13,7 @@ interface TimelineItemProp {
 const TimelineItem:React.FC<TimelineItemProp> = ({ title, place, year, description, imgSrc }) => {
   return (
     <div className="timeline__item flex py-6 border-b border-[#eee] ">
-      <img
+      <Image
         alt=""
         loading="lazy"
         width="40"
