@@ -3,9 +3,11 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   darkMode: "class",
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/layouts/**/*.{js,ts,jsx,tsx}", // If you have layouts in the "src" folder
+    "./src/pages/**/*.{js,ts,jsx,tsx}", // Add if "pages" are inside "src"
+    "./src/style/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     screens: {
