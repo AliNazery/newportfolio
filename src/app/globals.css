@@ -2,26 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+* {
+  font-family: inherit;
+  outline: none !important;
+  list-style: none !important;
+  text-decoration: none !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+  color: #454545;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body,
+p {
+  color: #454545;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
+.btn-default {
+  @apply cursor-pointer inline-flex text-center items-center whitespace-nowrap align-middle relative leading-[24px] border-0 text-[16px] font-bold px-[16px] py-[10px] capitalize rounded-[20px] z-[1] gap-[4px] transition-all duration-300 ease-linear;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  line-height: 1.4;
+  color: #152035;
+}
+
+.transform-z-0 {
+  transform: translateZ(0);
+}
+
+.backface-hidden {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .appearance-button {
+    appearance: button;
   }
 }
