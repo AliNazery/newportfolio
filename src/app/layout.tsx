@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 // import localFont from "next/font/local";
-import "./globals.css";
+import "./style/globals.css";
 import { ThemeProvider } from "next-themes";
 import Footer from "@/Components/Footer/Footer";
 import SidebarHeader from "@/Components/Header/Header";
