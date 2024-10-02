@@ -36,7 +36,7 @@ const config: Config = {
         "-1": "-1",
       },
       colors: {
-        text1: "hsla(0, 0%, 100%, .8);",
+        text1: "hsla(0, 0%, 100%, .8)",
       },
       scale: {
         "115": "1.15",
